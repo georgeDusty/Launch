@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dice.css">
+</head>
+
+<body>
+
+    <div class="card-container">
+        <div class="card one active">
+            <h1 class="player one">Player 1</h1>
+            <p class="total-score">0</p>
+            <div class="score-div">
+                <p class="current">Current</p>
+                <p class="current-score">0</p>
+            </div>
+        </div>
+        <div class="card two passive">
+            <h1 class="player two">Player 2</h1>
+            <p class="total-score">0</p>
+            <div class="score-div">
+                <p class="current">Current</p>
+                <p class="current-score">0</p>
+            </div>
+        </div>
+        <p class="new-game">&#x1F504; NEW GAME</p>
+        <p class="roll-dice">&#x1F3B2; ROLL DICE</p>
+        <p class="hold">&#x1F4E5; HOLD</p>
+        <div class="dice">
+            <div class="ball-one"></div>
+            <div class="ball-two"></div>
+            <div class="ball-three"></div>
+            <div class="ball-four"></div>
+            <div class="ball-five"></div>
+            <div class="ball-six"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

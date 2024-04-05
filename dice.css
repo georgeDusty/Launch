@@ -1,0 +1,134 @@
+.dice-one {
+  .ball-one {
+    grid-column: 2;
+    grid-row: 2;
+    display: block;
+  }
+}
+
+.dice-two {
+  .ball-one {
+    grid-column: 3;
+    grid-row: 1;
+    display: block;
+  }
+
+  .ball-two {
+    grid-column: 1;
+    grid-row: 3;
+    display: block;
+  }
+}
+
+.dice-three {
+  .ball-one {
+    grid-column: 3;
+    grid-row: 1;
+    display: block;
+  }
+
+  .ball-two {
+    grid-column: 1;
+    grid-row: 3;
+    display: block;
+  }
+  .ball-three {
+    grid-column: 2;
+    grid-row: 2;
+    display: block;
+  }
+}
+
+.dice-four {
+  .ball-one {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+  }
+
+  .ball-two {
+    grid-column: 3;
+    grid-row: 1;
+    display: block;
+  }
+
+  .ball-three {
+    grid-column: 1;
+    grid-row: 3;
+    display: block;
+  }
+
+  .ball-four {
+    grid-column: 3;
+    grid-row: 3;
+    display: block;
+  }
+}
+
+.dice-five {
+  .ball-one {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+  }
+
+  .ball-two {
+    grid-column: 3;
+    grid-row: 1;
+    display: block;
+  }
+
+  .ball-three {
+    grid-column: 1;
+    grid-row: 3;
+    display: block;
+  }
+
+  .ball-four {
+    grid-column: 3;
+    grid-row: 3;
+    display: block;
+  }
+  .ball-five {
+    grid-column: 2;
+    grid-row: 2;
+    display: block;
+  }
+}
+
+.dice-six {
+  .ball-one {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+  }
+
+  .ball-two {
+    grid-column: 3;
+    grid-row: 1;
+    display: block;
+  }
+
+  .ball-three {
+    grid-column: 1;
+    grid-row: 3;
+    display: block;
+  }
+
+  .ball-four {
+    grid-column: 3;
+    grid-row: 3;
+    display: block;
+  }
+
+  .ball-five {
+    grid-column: 1;
+    grid-row: 2;
+    display: block;
+  }
+  .ball-six {
+    grid-column: 3;
+    grid-row: 2;
+    display: block;
+  }
+}

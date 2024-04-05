@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  background-image: linear-gradient(to top left, #753682, #bf2e34);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.player {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.active .player {
+  font-weight: bold;
+}
+
+.total-score {
+  font-size: 8rem;
+  color: #c7365f;
+  margin-bottom: auto;
+}
+
+.card-container {
+  width: 100rem;
+  height: 60rem;
+  display: flex;
+  border-radius: 9px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card {
+  width: 50%;
+  padding: 9rem;
+  text-align: center;
+  background-color: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active {
+  background-color: #fcc2d7;
+  transition: all 0.5s;
+}
+
+.passive {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: all 0.5s;
+}
+
+.current {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.current-score {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.score-div {
+  background-color: #c7365f;
+  padding: 2rem 6.4rem;
+  border-radius: 8px;
+}
+
+.new-game,
+.roll-dice,
+.hold {
+  padding: 1rem 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s;
+}
+
+.new-game:active,
+.roll-dice:active,
+.hold:active {
+  transform: translate(-50%, 8%);
+}
+
+.new-game {
+  top: 40px;
+}
+
+.roll-dice {
+  bottom: 160px;
+}
+
+.hold {
+  bottom: 90px;
+}
+
+.dice {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 165px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.ball-one,
+.ball-two,
+.ball-three,
+.ball-four,
+.ball-five,
+.ball-six {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: red;
+  display: none;
+  justify-self: center;
+  align-self: center;
+}
+
+.active.winner {
+  background-color: #2f2f2f;
+}
+
+.player.winner {
+  color: #c7365f;
+}
